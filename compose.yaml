@@ -1,0 +1,12 @@
+services:
+  frontend:
+    #image: docker-vue01-frontend:1
+    build:
+      context: frontend
+      target: development-stage
+    ports:
+      - 80:80
+    volumes:
+      - ./frontend:/app
+
+    
