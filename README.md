@@ -1,3 +1,5 @@
+# Vorgehensweise
+
 Im Stammverzeichnis habe ich einen Node-Container gestartet:
 
 ```bash
@@ -22,3 +24,5 @@ Standard 5173. Jetzt habe ich das Frontend starten können:
 ```bash
 docker compose up frontend
 ```
+
+Dadurch wird nur `development-stage` aus der Dockerfile ausgeführt. Den Build für `production-stage` und das pushen des fertigen Images übernimmt Github Actions ❤️.
