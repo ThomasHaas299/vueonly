@@ -26,3 +26,13 @@ docker compose up frontend
 ```
 
 Dadurch wird nur `development-stage` aus der Dockerfile ausgeführt. Den Build für `production-stage` und das pushen des fertigen Images übernimmt Github Actions ❤️.
+
+## einzelne Docker-Befehle
+
+(im Ordner frontend)
+
+```bash
+docker build --target production-stage -t vueonly:latest .
+# oder einfacher
+docker build -t vueonly .
+```
